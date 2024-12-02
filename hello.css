@@ -1,0 +1,195 @@
+/* styleme.css */
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* About section styling */
+#about {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Portfolio section styling */
+#portfolio {
+    margin: 40px 0;
+}
+
+#portfolio h2 {
+    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #666;
+}
+
+/* Contact section styling */
+#contact {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+    body {
+        padding: 0 60px;
+    }
+
+    
+    header, #about, #portfolio, #contact {
+        max-width: 3000px;
+        margin: 0 auto;
+    }
+}
+
+@media  (orientation: landscape){
+    body {
+    color: auto;
+    }
+}
+/* Style for the previous works link */
+.project a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Social media icons styling */
+.social-media {
+    margin-top: 15px;
+    display: inlind-flex;
+    flex-direction: column;
+}
+
+.social-media a {
+    color: #fff;
+    background-color: #4a90e2;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    transition: background-color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #333;
+}
+
+.social-media i {
+    font-size: 1.2em;
+}
+
+.here {
+    display: inline-block;
+    justify-content: space-between;
+}

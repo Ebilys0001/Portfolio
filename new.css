@@ -1,0 +1,135 @@
+/* General Reset */
+body, h1, p, ul, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header .tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #e5e5e5;
+}
+
+/* Navigation */
+.nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+    color: #ffdd57;
+}
+
+/* Social Media and CTA */
+.header-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: white;
+    color: #3b82f6;
+}
+
+.cta-button {
+    background-color: #ffdd57;
+    color: #3b82f6;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #f3c32d;
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+
+/* On smaller screens (phones) */
+@media (max-width: 768px) {
+    .tagline {
+        display: none; /* Hide tagline */
+    }
+
+    .extra-option {
+        display: none; /* Hide extra navigation options */
+    }
+
+    .header-actions {
+        flex-direction: column; /* Stack social icons and button vertically */
+        gap: 10px;
+    }
+
+    .cta-button {
+        width: 100%; /* Make button full-width */
+    }
+}
+
+/* On larger screens (tablets and desktops) */
+@media (min-width: 769px) {
+    .header {
+        text-align: left; /* Align content to the left for a professional look */
+        padding: 40px 20px;
+    }
+
+    .nav {
+        justify-content: flex-end; /* Align navigation to the right */
+    }
+
+    .header-actions {
+        justify-content: flex-start; /* Align social icons and button to the left */
+    }
+
+    .extra-option {
+        display: inline; /* Show extra options on larger screens */
+    }
+}
